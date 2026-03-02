@@ -34,9 +34,6 @@ class CompanyDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testImportImportsCompany(): void
     {
         $this->tester->truncateCompanyRelations();
@@ -64,9 +61,6 @@ class CompanyDataImportPluginTest extends Unit
         $this->tester->assertDatabaseTableContainsData();
     }
 
-    /**
-     * @return void
-     */
     public function testGetImportTypeReturnsTypeOfImporter(): void
     {
         $companyDataImportPlugin = new CompanyDataImportPlugin();

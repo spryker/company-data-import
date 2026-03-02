@@ -29,9 +29,6 @@ class CompanyDataImportConfig extends DataImportConfig
         return $this->buildImporterConfiguration($moduleDataImportDirectory . 'company.csv', static::IMPORT_TYPE_COMPANY);
     }
 
-    /**
-     * @return string
-     */
     protected function getModuleRoot(): string
     {
         $moduleRoot = realpath(
